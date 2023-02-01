@@ -1,0 +1,83 @@
+.edit {
+  display: flex;
+
+  .editContainer {
+    flex: 6;
+
+    .editTop {
+      border-radius: 20px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #888;
+      margin: 20px;
+      padding: 20px;
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    }
+
+    .editBottom {
+      border-radius: 20px;
+      display: flex;
+      margin: 20px;
+      padding: 20px;
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+      .left {
+        img {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+        }
+      }
+
+      .right {
+        flex: 2;
+        padding: 10px;
+
+        form {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          flex-wrap: wrap;
+          justify-content: space-around;
+
+          .formInputs {
+            width: 80%;
+
+            label {
+              display: flex;
+              align-items: center;
+              font-size: 14px;
+              color: #888;
+              gap: 10px;
+            }
+
+            input {
+              width: 100%;
+              padding: 5px;
+              border: none;
+              outline: none;
+              border-bottom: 1px solid #000;
+            }
+          }
+
+          button {
+            font-weight: 500;
+            font-size: 16px;
+            width: 140px;
+            border: none;
+            padding: 10px;
+            background-color: rgb(13, 123, 123);
+            color: whitesmoke;
+            cursor: pointer;
+
+            &:hover {
+              background-color: rgb(34, 195, 195);
+            }
+          }
+        }
+      }
+    }
+  }
+}

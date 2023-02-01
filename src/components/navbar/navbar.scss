@@ -1,0 +1,105 @@
+.navbar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: rgb(114, 114, 114);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+  .wrapper {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .search {
+      align-items: center;
+      height: 25px;
+      display: flex;
+      margin-left: 5px;
+      margin-top: 5px;
+      border: 1px solid lightblue;
+      border-radius: 5px;
+      padding: 5px 10px;
+
+      .noShow {
+        border: none;
+      }
+
+      input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+      }
+
+      .icon {
+        font-size: 20px;
+        cursor: pointer;
+        color: rgb(241, 70, 7);
+
+        &:hover {
+          color: rgb(130, 39, 6);
+        }
+      }
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        position: relative;
+
+        span {
+          font-size: 14px;
+        }
+
+        .icon {
+          color: rgb(241, 70, 7);
+          cursor: pointer;
+          font-size: 20px;
+
+          &:hover {
+            color: rgb(130, 39, 6);
+          }
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+
+        .counter {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 12px;
+          height: 12px;
+          color: white;
+          font-size: 12px;
+          top: -5px;
+          right: -5px;
+          background-color: red;
+          border-radius: 50%;
+          padding: 2px;
+          position: absolute;
+        }
+
+        .userInfo {
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          font-size: 12px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

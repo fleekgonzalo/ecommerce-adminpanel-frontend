@@ -1,0 +1,105 @@
+.view {
+  display: flex;
+  width: 100%;
+
+  .viewContainer {
+    flex: 6;
+
+    .topSkeleton {
+      display: flex;
+      align-items: center;
+
+      .skeleton {
+        margin: 20px;
+        width: 50%;
+      }
+    }
+
+    .skeletonBottom {
+      margin: 20px;
+    }
+
+    .top {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      gap: 20px;
+
+      .left {
+        padding: 20px;
+        flex: 1;
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        position: relative;
+
+        .editButton {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 5px;
+          font-size: 12px;
+          color: purple;
+          background-color: rgba(128, 0, 128, 0.349);
+          cursor: pointer;
+          border-radius: 0px 0px 0px 5px;
+
+          &:hover {
+            background-color: rgb(128, 0, 128);
+            color: whitesmoke;
+          }
+        }
+
+        .item {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .details {
+            color: #555;
+
+            .itemTitle {
+              font-size: 28px;
+              font-weight: bold;
+              margin-bottom: 10px;
+            }
+
+            .detailsItem {
+              font-weight: 500;
+              margin-bottom: 10px;
+
+              .itemKey {
+                font-weight: bold;
+                color: gray;
+                margin-right: 5px;
+              }
+
+              .itemValue {
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+      .right {
+        flex: 2;
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      }
+    }
+
+    .bottom {
+      margin: 20px;
+
+      .title {
+        color: #555;
+      }
+    }
+  }
+}

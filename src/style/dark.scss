@@ -1,0 +1,116 @@
+.app.dark {
+  background-color: #222;
+  color: rgb(156, 156, 156);
+
+  .chartGrid {
+    stroke: rgba(228, 228, 228, 0.219);
+  }
+
+  .table {
+    background-color: #222;
+
+    .tableCell {
+      color: rgb(156, 156, 156);
+    }
+  }
+
+  .sidebar {
+    .top {
+      border-color: #333;
+    }
+  }
+
+  .navbar {
+    color: #999;
+    border-color: #333;
+
+    .search {
+      border-color: gray;
+      color: white;
+
+      input {
+        color: whitesmoke;
+      }
+    }
+  }
+
+  .sidebar {
+    background-color: #222;
+    color: #999;
+    border-color: #333;
+
+    .logo {
+      color: gray;
+    }
+
+    hr {
+      border-color: #333;
+    }
+
+    ul {
+      li {
+        &:hover {
+          background-color: #333;
+        }
+
+        .icon {
+          color: #999;
+        }
+      }
+    }
+  }
+
+  .datatable {
+    .datagrid {
+      color: gray;
+
+      .viewButton,
+      .deleteButton {
+        color: gray;
+        border-color: #333;
+      }
+    }
+  }
+
+  input {
+    background-color: transparent;
+  }
+
+  .ant-layout {
+    .ant-layout-content {
+      background-color: #112538;
+
+      .dashboard {
+        background-color: #112538;
+        color: #94fcff;
+
+        .title {
+          color: #60f9ff;
+        }
+      }
+    }
+
+    .table {
+      background-color: #112538;
+      border: 1px solid #ffffff;
+    }
+
+    .ant-menu {
+      .ant-menu-item-active {
+        background-color: #112538;
+      }
+
+      .ant-menu-item-selected {
+        background-color: #112538;
+      }
+
+      .ant-menu-title-content {
+        color: #ffffff;
+      }
+
+      .ant-menu-item-icon {
+        color: #94fcff;
+      }
+    }
+  }
+}

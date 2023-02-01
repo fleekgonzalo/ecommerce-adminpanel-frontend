@@ -1,0 +1,118 @@
+.sidebar {
+  flex: 1;
+  min-height: 100vh;
+  background-color: #25013c;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+  .top {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(98, 48, 179, 0.81);
+
+    .logo {
+      background-color: rgba(98, 48, 179, 0.81);
+      padding: 2px 8px;
+      font-family: cursive;
+      text-align: center;
+      font-weight: bold;
+      font-size: 23px;
+      color: rgb(241, 70, 7);
+    }
+  }
+
+  .center {
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+
+    .link {
+      text-decoration: none;
+      color: white;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+
+      .title {
+        font-style: 10px;
+        font-weight: bold;
+        color: rgb(190, 190, 190);
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+
+      .icon {
+        color: white;
+      }
+
+      li {
+        font-weight: 600;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+
+        &:hover {
+          margin-left: -5px;
+          border-left: 5px solid rgb(253, 67, 0);
+          background-color: rgba(255, 127, 80, 0.44);
+          cursor: pointer;
+        }
+      }
+
+      .selected {
+        margin-left: -5px;
+        border-left: 5px solid rgb(253, 67, 0);
+        background-color: rgba(255, 127, 80, 0.44);
+
+        .icon {
+          color: rgb(223, 87, 38);
+        }
+      }
+
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .mode {
+    margin-left: 10px;
+    font-style: 10px;
+    font-weight: bold;
+    color: rgb(190, 190, 190);
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .bottom {
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+
+    .colorOption {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      border: 1px solid #7451f8;
+      margin: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+
+      &:nth-child(1) {
+        background-color: whitesmoke;
+      }
+      &:nth-child(2) {
+        background-color: #333;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.login {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  color: #4d4d4d;
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    width: 400px;
+    height: auto;
+    padding: 50px;
+    border-radius: 30px;
+    gap: 20px;
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: -50px;
+    }
+
+    .bottom {
+      width: 100%;
+
+      .form {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10px;
+
+        .MuiFormLabel-root {
+          color: #4d4d4d;
+        }
+
+        .MuiInputBase-input {
+          color: #4d4d4d;
+        }
+
+        .formInput {
+          color: #4d4d4d;
+        }
+
+        .loginBtn {
+          width: 100%;
+        }
+      }
+
+      .error-msg {
+        color: red;
+      }
+    }
+  }
+}
